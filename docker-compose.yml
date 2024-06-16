@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  scheduler_service:
+    build: ./services/scheduler_service
+    ports:
+      - "5001:5001"
+  conversation_service:
+    build: ./services/conversation_service
+    ports:
+      - "5002:5002"
+  notification_service:
+    build: ./services/notification_service
+    ports:
+      - "5003:5003"
+  database_service:
+    build: ./services/database_service
+    ports:
+      - "5004:5004"
